@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240.65 347.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #9bcb42;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" x="26.01" y="14.94" width="188.63" height="317.59"/>
+    </clipPath>
+  </defs>
+  <g class="cls-3">
+    <g id="Group_700" data-name="Group 700">
+      <path id="Path_2993" data-name="Path 2993" class="cls-2" d="M212.04,17.8c-1.75-1.83-4.18-2.86-6.71-2.86h-98.28c1.68,1.63-71.72,0-71.72,0-5.14,0-9.32,4.16-9.32,9.31,0,.12,0,.25,0,.37l11.73,298.96c.2,5,4.31,8.95,9.31,8.95h146.56c5,0,9.11-3.95,9.31-8.95l11.73-298.96c.1-2.53-.84-4.99-2.6-6.82M192.44,115.27H62.25l2.08,40.27,18.6-.97-1.08-20.67h109.85l-7.06,180.01H56L45.01,33.57s63.71-.12,62.18,0h18.41v-.12h57.43v.12h12.61l-3.2,81.7Z"/>
+    </g>
+  </g>
+</svg>
