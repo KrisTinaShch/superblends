@@ -64,6 +64,41 @@ tabs.forEach(tab => {
 });
 
 
+// COUNTER
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.counter');
+
+    const animateCounter = (el) => {
+        const target = +el.dataset.target;
+        const duration = 800;
+        const stepTime = Math.max(10, duration / target);
+        let current = 0;
+
+        const update = () => {
+            current += Math.ceil(target / (duration / stepTime));
+            if (current >= target) {
+                el.textContent = target.toLocaleString() + '+';
+            } else {
+                el.textContent = current.toLocaleString() + '+';
+                setTimeout(update, stepTime);
+            }
+        };
+        update();
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                animateCounter(el);
+                observer.unobserve(el);
+            }
+        });
+    }, { threshold: 0.6 });
+
+    counters.forEach(counter => observer.observe(counter));
+});
+
 
 $('.review-carousel').slick({
     infinite: false,

@@ -20,7 +20,15 @@
     font-style: normal;
     font-display: swap;
 }
-
+@font-face {
+    font-family: 'Helen Bold';
+    src: url('../fonts/Helen-Bg-Bold.woff2') format('woff2'),
+        url('../fonts/Helen-Bg-Bold.woff') format('woff'),
+        url('../fonts/Helen-Bg-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 @font-face {
     font-family: 'Helen Light';
     src: url('../fonts/Helen-Bg-Light.woff2') format('woff2'),
@@ -157,7 +165,7 @@ a.green-buy-link {
 }
 
 .underhero-badges img {
-    max-height: 75px;
+    max-width: 75px;
 }
 
 /* CUSTOMER TESTIMONIAL */
@@ -232,9 +240,10 @@ a.green-buy-link {
 
 .three-blends h2 {
     font-family: "Oswald", sans-serif;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: 500;
 }
 
 /* SLIMFIT SUPERBLENDS */
@@ -436,6 +445,7 @@ a.green-buy-link {
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     padding: 10px;
+    font-weight: 500;
 }
 
 .preparing h2.preparing-title span {
@@ -458,7 +468,7 @@ a.green-buy-link {
     top: 0;
 }
 
-.preparing .preparing-images .preparing-images__arrows.shake img{
+.preparing .preparing-images .preparing-images__arrows.shake img {
     max-width: 50px;
 }
 
@@ -558,6 +568,7 @@ a.green-buy-link {
 
 .benefits {
     position: relative;
+    min-height: 165vw;
 }
 
 .benefits h2.benefits-title {
@@ -587,7 +598,6 @@ a.green-buy-link {
 }
 
 .benefits-badges {
-    margin-top: 450px;
     gap: 20px;
 }
 
@@ -782,6 +792,8 @@ h3.ingredient-popup-title {
 .preparing .tab-content.active {
     display: block;
 }
+
+@media screen and (min-width:425px) {}
 
 @media screen and (min-width:992px) {
     .on-desktop {
@@ -1035,6 +1047,9 @@ h3.ingredient-popup-title {
     .slimfit-blend .green-accent .slimfit-blend-container p {
         color: var(--black-base);
         font-size: 16px;
+    }
+    .slimfit-blend .slimfit-blend-container p.slimfit-blend-bold {
+        font-family: 'Helen Bold',sans-serif;
     }
 
     .slimfit-blend .green-accent .slimfit-blend-container h4 {
@@ -1347,18 +1362,22 @@ h3.ingredient-popup-title {
         width: 500px;
         margin: 50px auto 0 auto;
     }
+
     .preparing .preparing-images .preparing-images__arrows.yoghurt p {
         font-size: 35px;
     }
+
     .preparing .preparing-images .preparing-images__arrows.yoghurt img {
         transform: rotate(90deg);
         margin-left: 55px;
         max-width: 45px;
         margin-top: 10px;
     }
+
     .preparing .preparing-images .preparing-images__arrows.shake p {
         font-size: 35px;
     }
+
     .preparing .preparing-images .preparing-images__arrows.shake img {
         margin-right: 50px;
         margin-top: 17px;
